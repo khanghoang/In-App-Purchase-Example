@@ -21,6 +21,8 @@
 		B4793C9D181639D6007BB650 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4793C7F181639D6007BB650 /* UIKit.framework */; };
 		B4793CA5181639D6007BB650 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4793CA3181639D6007BB650 /* InfoPlist.strings */; };
 		B4793CA7181639D6007BB650 /* In_App_PurchaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4793CA6181639D6007BB650 /* In_App_PurchaseTests.m */; };
+		B4E4CE7F1816678D00E3A01D /* HTKIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E4CE7E1816678D00E3A01D /* HTKIAPHelper.m */; };
+		B4E4CE811816679E00E3A01D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E4CE801816679E00E3A01D /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		B4793CA2181639D6007BB650 /* In-App-PurchaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "In-App-PurchaseTests-Info.plist"; sourceTree = "<group>"; };
 		B4793CA4181639D6007BB650 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4793CA6181639D6007BB650 /* In_App_PurchaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = In_App_PurchaseTests.m; sourceTree = "<group>"; };
+		B4E4CE7D1816678D00E3A01D /* HTKIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTKIAPHelper.h; sourceTree = "<group>"; };
+		B4E4CE7E1816678D00E3A01D /* HTKIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTKIAPHelper.m; sourceTree = "<group>"; };
+		B4E4CE801816679E00E3A01D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E4CE811816679E00E3A01D /* StoreKit.framework in Frameworks */,
 				B4793C7E181639D6007BB650 /* CoreGraphics.framework in Frameworks */,
 				B4793C80181639D6007BB650 /* UIKit.framework in Frameworks */,
 				B4793C7C181639D6007BB650 /* Foundation.framework in Frameworks */,
@@ -82,6 +88,8 @@
 		B4793C6F181639D6007BB650 = {
 			isa = PBXGroup;
 			children = (
+				B4E4CE7D1816678D00E3A01D /* HTKIAPHelper.h */,
+				B4E4CE7E1816678D00E3A01D /* HTKIAPHelper.m */,
 				B4793C81181639D6007BB650 /* In-App-Purchase */,
 				B4793CA0181639D6007BB650 /* In-App-PurchaseTests */,
 				B4793C7A181639D6007BB650 /* Frameworks */,
@@ -101,6 +109,7 @@
 		B4793C7A181639D6007BB650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4E4CE801816679E00E3A01D /* StoreKit.framework */,
 				B4793C7B181639D6007BB650 /* Foundation.framework */,
 				B4793C7D181639D6007BB650 /* CoreGraphics.framework */,
 				B4793C7F181639D6007BB650 /* UIKit.framework */,
@@ -252,6 +261,7 @@
 			files = (
 				B4793C92181639D6007BB650 /* HTKViewController.m in Sources */,
 				B4793C8C181639D6007BB650 /* HTKAppDelegate.m in Sources */,
+				B4E4CE7F1816678D00E3A01D /* HTKIAPHelper.m in Sources */,
 				B4793C88181639D6007BB650 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +471,7 @@
 				B4793CAC181639D6007BB650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4793CAD181639D6007BB650 /* Build configuration list for PBXNativeTarget "In-App-PurchaseTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +480,7 @@
 				B4793CAF181639D6007BB650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
